@@ -24,12 +24,12 @@
 
                 <div id="carousel" class="carousel w-50 mx-auto">
 
-                    <div :class="['slideClass', 'activeClass']">
+                    <div :class="[slideClass, activeClass]">
                         <div :class="slideOverlayClass">
                             <h3>{{images[0].title}}</h3>
                             <p>{{images[0].text}}</p>
                         </div>
-                        <img v-bind:src="require(images[0]imageUrl)" alt="">
+                        <img v-bind:src="images[0].imageUrl" alt="">
                     </div>
 
                     <div :class='slideClass'>
@@ -37,7 +37,7 @@
                             <h3>{{images[1].title}}</h3>
                             <p>{{images[1].text}}</p>
                         </div>
-                        <img v-bind:src="require(images[1]imageUrl)" alt="">
+                        <img v-bind:src="images[1].imageUrl" alt="">
                     </div>
 
                     <div :class='slideClass'>
@@ -45,7 +45,7 @@
                             <h3>{{images[2].title}}</h3>
                             <p>{{images[2].text}}</p>
                         </div>
-                        <img v-bind:src="require(images[2]imageUrl)" alt="">
+                        <img v-bind:src="images[2].imageUrl" alt="">
                     </div>
 
                     <div :class='slideClass'>
@@ -53,7 +53,7 @@
                             <h3>{{images[3].title}}</h3>
                             <p>{{images[3].text}}</p>
                         </div>
-                        <img v-bind:src="require(images[3]imageUrl)" alt="">
+                        <img v-bind:src="images[3].imageUrl" alt="">
                     </div>
 
                     <div :class='slideClass'>
@@ -61,7 +61,7 @@
                             <h3>{{images[4].title}}</h3>
                             <p>{{images[4].text}}</p>
                         </div>
-                        <img v-bind:src="require(images[4]imageUrl)" alt="">
+                        <img v-bind:src="images[4].imageUrl" alt="">
                     </div>
 
                 </div>
